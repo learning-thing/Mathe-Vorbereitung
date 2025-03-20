@@ -36,4 +36,5 @@ img {
 .wichtig {
     color: rgb(83, 0, 0);
     font-weight: bold;
+    font-style: normal;
 }
