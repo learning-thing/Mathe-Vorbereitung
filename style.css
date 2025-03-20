@@ -18,3 +18,7 @@ a {
     color: aquamarine;
     font-style: italic;
 }
+
+#wurzel {
+    content: "\221A";
+}
