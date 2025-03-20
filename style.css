@@ -10,15 +10,30 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+}
+
 a {
     color: white;
 }
 
-#anmerkung {
-    color: aquamarine;
+
+p {
+    color: rgb(123, 218, 255);
     font-style: italic;
 }
 
-#wurzel {
+span {
     content: "\221A";
+}
+
+img {
+    height: 300px;
+    border-radius: 5%;
+}
+
+.wichtig {
+    color: rgb(83, 0, 0);
+    font-weight: bold;
 }
