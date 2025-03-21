@@ -38,3 +38,27 @@ img {
     font-weight: bold;
     font-style: normal;
 }
+
+.variable {
+    color: rgb(255, 255, 121);
+    display: inline;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.antwort {
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+.richtig {
+    color: rgb(72, 253, 72);
+}
+
+.falsch {
+    color: rgb(255, 0, 85);
+}
+
+.freshField {
+    width: 5%;
+}
