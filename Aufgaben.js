@@ -3,17 +3,6 @@ let guessB = document.getElementById("guessB");
 let guessC = document.getElementById("guessC");
 
 
-guessA.addEventListener("input", 
-    function(e) {
-        console.log(guessA.value);
-        if (guessA.value==4) {
-            console.log("RICHTIG!")
-            document.getElementById("worta").innerHTML = "Das ist Richtig!";
-            document.getElementById("worta").classList.add("richtig");
-        }
-    }, false
-);
-
 guessA.addEventListener("input", //Check A
     function(e) {
         console.log(guessA.value);
@@ -31,7 +20,7 @@ guessA.addEventListener("input", //Check A
     }, false
 );
 
-guessB.addEventListener("input", //Check A
+guessB.addEventListener("input", //Check B
     function(e) {
         console.log(guessB.value);
         let wort = document.getElementById("wortb");
@@ -48,13 +37,19 @@ guessB.addEventListener("input", //Check A
     }, false
 );
 
-guessC.addEventListener("input", //Check A
+guessC.addEventListener("input", //Check C
     function(e) {
         console.log(guessA.value);
-        if (guessC.value==3) {
+        let wort = document.getElementById("wortc");
+        if (guessC.value=="0.5" || guessC.value=="0,5") {
             console.log("RICHTIG!")
-            document.getElementById("worta").innerHTML = "Das ist Richtig!";
-            document.getElementById("worta").classList.add("richtig");
+            wort.innerHTML = "Das ist Richtig!";
+            wort.classList.remove("falsch");
+            wort.classList.add("richtig");
+        } else {
+            wort.innerHTML = "Das ist Falsch!";
+            wort.classList.remove("richtig");
+            wort.classList.add("falsch");
         }
     }, false
 );
