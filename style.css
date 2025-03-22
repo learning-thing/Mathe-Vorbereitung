@@ -67,3 +67,13 @@ img {
 
     background-color: rgb(255, 255, 255);
 }
+
+
+.cleanbtn {
+    background-color: black;
+    color: white;
+    height: 100px;
+    width: 200px;
+    font-size: 25pt;
+    border-radius: 10px;
+}
