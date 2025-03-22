@@ -10,12 +10,18 @@ function pruefen() {
     console.log(fa);
     console.log(fb);
     console.log(fc);
-    if (3*fa+4*fb+2*fc==44) {
+    let erg = (3*fa)+ (4*fb)  + (2*fc);
+    console.log(erg);
+    if (erg==44) {
         console.log("RICHTIG")
         ant.innerHTML = "DAS IST RICHTIG!!!"
         ant.classList.add("richtig")
+        ant.classList.remove("falsch");
     } else {
-        console.log("FALSCH")
+        ant.classList.remove("richtig");
+        ant.classList.add("falsch");
+        ant.innerHTML = "DAS IST FLASCH!!!";
+        console.log("FALSCH");
     }
 }
 
